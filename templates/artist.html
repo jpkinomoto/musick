@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Artist Page</title>
+  </head>
+  <body>
+    <h1>{{ name }}'s Page</h1>
+    <p><img src="/media/{{ image }}" width="560" height="515"frameborder="0" ></p>
+    <iframe src="https://open.spotify.com/embed/artist/{{ spotify_link }}" width="300" height="480" frameborder="0"
+    allowtransparency="true" allow="encrypted-media"></iframe>
+    <iframe src="https://www.youtube.com/embed/{{ youtube_link }}" width="560" height="415"frameborder="0"
+    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <a class="twitter-timeline" width="460" height="615"frameborder="0" href="https://twitter.com/{{ twitter_link }}?ref_src=twsrc%5Etfw">Tweets by {{ name }}</a>
+
+  </body>
+</html>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
